@@ -1,0 +1,179 @@
+/** {
+    border: 1px solid red !important;
+}*/
+
+/* CSS written by Aldi */
+
+body {
+    width: 85% !important;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1, h3 {
+    text-align: right;
+    color: #747704;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+h1, h3, p, a {
+    font-family: "Lato";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    flex-wrap: wrap;
+}
+
+h4 {
+    width: 100%;
+    font-size: 30px;
+    margin: 15px 10px;
+    color: #BCBBBB;
+}
+
+ul {
+    float: right;
+    margin: 0 70px 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 70px;
+    height: 70px;
+    margin: 15px 0;
+}
+
+li:nth-child(1) {
+    background: #F8981C;
+}
+
+li:nth-child(2) {
+    background: #BCBBBB;
+}
+
+li:nth-child(3) {
+    background: #747704;
+}
+
+li:nth-child(4), li:nth-child(5), li:nth-child(6) {
+    height: 0;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 25px;
+}
+
+hr {
+    flex-wrap: wrap;
+    height: 4px;
+    margin-bottom: 3%;
+    background-color: #BCBBBB;
+    border: none;
+}
+
+
+.featured {
+    text-align: center;
+}
+
+.top-image {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.side-col-2 {
+    margin: 10px auto;
+    width: 16.66%;
+}
+
+a {
+    text-decoration: none;
+    color: #747704;
+}
+
+/* Default CSS */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 300px){
+	p {
+		background-color: blue;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	p {
+		display: none;
+	}
+}
+
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+    text-align: center;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+	flex-wrap: wrap;
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
