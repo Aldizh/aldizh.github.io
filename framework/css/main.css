@@ -57,24 +57,12 @@ li {
   background: #747704;
 }
 
-/*li:nth-child(4), li:nth-child(5), li:nth-child(6) {
-  height: 0;
-  font-size: 20px;
-  font-family: 'Lato', sans-serif;
-  margin-top: 25px;
-}*/
-
 hr {
   flex-wrap: wrap;
   height: 4px;
   margin-bottom: 3%;
   background-color: #BCBBBB;
   border: none;
-}
-
-#middle-image {
-  width: calc((100% - 20px));
-  margin: 0 10px 0 10px;
 }
 
 #top-image {
@@ -90,7 +78,7 @@ hr {
 
 .col-4 img {
   width: 100%;
-  height: 68%;
+  padding-right: 10px;
 }
 
 .featured {
