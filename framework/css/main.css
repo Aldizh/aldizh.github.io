@@ -28,6 +28,26 @@ h4 {
   color: #BCBBBB;
 }
 
+p {
+  font-size: 30px;
+  text-align: center;
+  color: #747704;
+  margin: 5px 0 5px;
+}
+
+a {
+  color: #747704;
+  text-decoration: none;
+}
+
+hr {
+  flex-wrap: wrap;
+  height: 4px;
+  margin-bottom: 3%;
+  background-color: #BCBBBB;
+  border: none;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -57,13 +77,6 @@ li {
   background: #747704;
 }
 
-hr {
-  flex-wrap: wrap;
-  height: 4px;
-  margin-bottom: 3%;
-  background-color: #BCBBBB;
-  border: none;
-}
 
 #top-image {
   width: 30%;
@@ -81,10 +94,6 @@ hr {
   padding-right: 10px;
 }
 
-.featured {
-  text-align: center;
-}
-
 
 .side-col-2 {
   margin: 10px auto;
@@ -95,10 +104,6 @@ hr {
   width: 33.33%;
 }
 
-a {
-  color: #747704;
-  text-decoration: none;
-}
 
 /* Default CSS */
 
@@ -115,16 +120,16 @@ a {
     width: 100%;
   }
 
-  .col-4 {
-    width: 100% !important;
-  }
-
   .col-4-top {
     width: 33.33% !important;
   }
 
-  .col-6 {
-    width: 40% !important;
+  .col-6 h1 {
+    margin-top: 20px;
+  }
+
+  .col-6 h3 {
+    margin-top: 5px;
   }
 
   ul {
@@ -137,6 +142,15 @@ a {
   ul li {
     display: inline-block;
   }
+
+  #boxes {
+    width: 83.33% !important;
+    text-align: right;
+  }
+
+  .side-col-2 {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -147,6 +161,10 @@ a {
 
   .hero img {
     margin-top: -80px;
+  }
+
+  #boxes {
+    display: none;
   }
 }
 
@@ -168,6 +186,19 @@ a {
 
   .col-4 {
     margin-bottom: 25px;
+  }
+
+  #boxes {
+    text-align: left;
+  }
+
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 15px;
   }
 }
 
