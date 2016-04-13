@@ -1,2 +1,1 @@
-# portfolio
-UI projects
+Simple personal portfolio site built using 12-column grid based layout
