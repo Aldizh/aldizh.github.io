@@ -36,11 +36,6 @@ p {
   margin-left: 10px;
 }
 
-a {
-  color: #0645AD;
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
 }
@@ -184,8 +179,9 @@ li {
 }
 
 @media only screen and (max-width: 424px) {
-  .col-4-top {
+  .col-4-top, .col-6 {
     width: 100% !important;
+    text-align: center;
   }
 
   .featured {

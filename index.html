@@ -1,40 +1,83 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <title>Framework Test Page</title>
-  </head>
-
-  <body class="grid">
-    <header>
-      <div class="row">
-        <section class="col-6"></section>
-        <section class="col-6">
-          <h1>Aldi Zhupani</h1>
-          <h3>Software Engineer at Copart</h3>
-        </section>
-      </div>
-    </header>
-
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Web Page</title>
+	<link href="css/main.css" rel="stylesheet">
+	<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<style>
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+</head>
+<body class="grid">
+  <header>
+    <div class="row">
+      <section class="col-6"></section>
+      <section class="col-6">
+        <h1>Aldi Zhupani</h1>
+        <h3>Software Engineer at Copart</h3>
+      </section>
+    </div>
+  </header>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">Introduction</a></li>
+			<li><a href="#tabs-2">Featured Projects</a></li>
+			<li><a href="#tabs-3">Portfolio</a></li>
+			<li><a href="#tabs-4">Contact</a></li>
+		</ul>
+		<div id="tabs-1">
       <div class="row"> <!-- Main Content -->
         <div class="col-6">
           <h4>About me</h4>
-          <p>Professional developer with experience ranging from database design to front end web applications. I have and will continue to do my best to find solutions to every problem.</p>
-          <h4>Ways to reach me</h4>
-          <p>
-             My work can be accessed via <a href="https://www.github.com/Aldizh">Github</a></br>
-             Please feel free to connect with me on <a href="https://www.linkedin.com/in/aldi-zhupani">Linkedin</a></br>
-             I also have a tech related blog profile on <a href="https://www.quora.com/profile/Aldi-Zhupani">Quora</a></br>
-          </p>
+          <p>Professional developer with experience ranging from database design to front end web applications.
+					Currently at Copart learning and developing on Node/React. Most recent work i have completed is an international portal
+					used by Copart employees in Germany, India and Spain.<br>
+					It includes features such as receiving a car, title processing, service orders,
+					auctioning and interfacing between members and sellers. The backbone of the app was built on RoR (Ruby on Rails) with Angular JS integration for the front end.</p>
         </div>
         <div class="col-6-img">
           <img class="main-img" src="me.jpg" alt="My Image">
         </div>
       </div>
-      <div class="row"> <!-- three images -->
+    </div>
+		<div id="tabs-2">
+			<div class="row"> <!-- three images -->
         <hr>
         <h4>Featured Projects</h4>
         <div class="col-4">
@@ -45,7 +88,7 @@
         <div class="col-4">
           <img src="arcade.png" alt="My Image">
           <p></p>
-          <a href="https://github.com/Aldizh/arcade-game">Arcade game</a>
+          <a href="https://bugs-arcade.herokuapp.com/">Arcade game</a>
         </div>
         <div class="col-4">
           <img src="lot_view.png" alt="My Image">
@@ -53,6 +96,33 @@
           <a href="https://github.com/copartit/figs">Copart web app</a>
         </div>
       </div>
-    </div>
-  </body>
+		</div>
+		<div id="tabs-3">
+			<p>
+				 My work can be accessed via <a href="https://www.github.com/Aldizh">Github</a></br>
+				 Please feel free to connect with me on <a href="https://www.linkedin.com/in/aldi-zhupani">Linkedin</a></br>
+				 I also have a tech related blog profile on <a href="https://www.quora.com/profile/Aldi-Zhupani">Quora</a></br>
+			</p>
+		</div>
+		<div id="tabs-4">
+			<h5>Phone: 5105291247</h5>
+			<h5>Email: aldizhupani@gmail.com</h5>
+		</div>
+	</div>
+
+	<script src="jquery-ui/external/jquery/jquery.js"></script>
+	<script src="jquery-ui/jquery-ui.js"></script>
+	<script>
+		$( "#tabs" ).tabs();
+		// Hover states on the static widgets
+		$( "#dialog-link, #icons li" ).hover(
+			function() {
+				$( this ).addClass( "ui-state-hover" );
+			},
+			function() {
+				$( this ).removeClass( "ui-state-hover" );
+			}
+	);
+	</script>
+</body>
 </html>
