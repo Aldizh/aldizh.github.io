@@ -7,5 +7,5 @@
 
 Overview
 ---------
-This site is built solely with HTML/CSS and JavaScript
-It can be viewed [Here](https://aldizh.github.io)
+- This site is built solely with HTML/CSS and JavaScript
+- It can be viewed [Here](https://aldizh.github.io)
