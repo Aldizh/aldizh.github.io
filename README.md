@@ -1,5 +1,9 @@
-# Personal Website
-## Simple personal portfolio site built using 12-column grid based layout
+### Personal Website
+
+> This is a simple personal portfolio site.
+> It uses a 12-column grid based layout and
+> media queries to properly display information
+> in different screen sizes
 
 Overview
 ---------
