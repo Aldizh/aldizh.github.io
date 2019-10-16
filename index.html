@@ -5,37 +5,67 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Personal Web Page</title>
 		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/header.css" rel="stylesheet">
+		<link href="css/responsive_nav.css" rel="stylesheet">
 		<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
 	</head>
 	<body class="grid">
     <div class="row">
-      <section class="col-6"></section>
+      <section class="col-6">
+				<header>
+					<a
+						href="#main-menu"
+						id="main-menu-toggle"
+						class="menu-toggle"
+						aria-label="Open main menu"
+					>
+						<span class="sr-only">Open main menu</span>
+						<span class="fa fa-bars" aria-hidden="true"></span>
+					</a>
+		
+					<nav id="main-menu" class="main-menu" aria-label="Main menu">
+						<a href="#main-menu-toggle"
+								id="main-menu-close"
+								class="menu-close"
+								aria-label="Close main menu">
+							<span class="sr-only">Close main menu</span>
+							<span class="fa fa-times" aria-hidden="true"></span>
+						</a>
+						<ul>
+							<li><a href="#tabs-1">Introduction</a></li>
+							<li><a href="#tabs-2">Featured Projects</a></li>
+							<li><a href="#tabs-3">Portfolio</a></li>
+							<li><a href="#tabs-4">Contact</a></li>
+						</ul>
+					</nav>
+					<a href="#main-menu-toggle"
+							class="backdrop"
+							tabindex="-1"
+							aria-hidden="true" hidden>
+					</a>
+				</header>
+			</section>
       <section class="col-6">
         <h1>Aldi Zhupani</h1>
-        <h3>Software Engineer at Copart</h3>
+				<h3>Software Engineer</h3>
+				<!-- TO DO: See if we really need the picture here -->
+				<!-- <h3>
+					<img class="main-img" src="images/me.jpg" width="100" height="100" alt="My Image">
+				</h3> -->
       </section>
-    </div>
+		</div>
 		<div id="tabs">
-			<ul>
-				<li><a href="#tabs-1">Introduction</a></li>
-				<li><a href="#tabs-2">Featured Projects</a></li>
-				<li><a href="#tabs-3">Portfolio</a></li>
-				<li><a href="#tabs-4">Contact</a></li>
-			</ul>
 			<div id="tabs-1">
 	      <div class="row"> <!-- Main Content -->
-	        <div class="col-6">
+	        <div>
 	          <h4>About me</h4>
 	          <p>Professional developer with experience ranging from database design to front end web applications.
 						Currently at Copart learning and developing on Node/React. Most recent work i have completed is an international portal
 						used by Copart employees in Germany, India and Spain.<br>
 						It includes features such as receiving a car, title processing, service orders,
 						auctioning and interfacing between members and sellers. The backbone of the app was built on RoR (Ruby on Rails) with Angular JS integration for the front end.</p>
-	        </div>
-	        <div class="col-6-img">
-	          <img class="main-img" src="images/me.jpg" alt="My Image">
 	        </div>
 	      </div>
 	    </div>
@@ -44,31 +74,35 @@
 	        <hr>
 	        <h4>Featured Projects</h4>
 	        <div class="col-4">
-	          <img src="images/grid.png" alt="My Image">
+	          <img src="images/grid.png" width="100" height="100" alt="My Image">
 	          <p></p>
 						<a href="http://aldizh.github.io/react-data-grid">Editable Grid</a>
 	        </div>
 	        <div class="col-4">
-	          <img src="images/arcade.png" alt="My Image">
+	          <img src="images/arcade.png" width="100" height="100" alt="My Image">
 	          <p></p>
 	          <a href="https://bugs-arcade.herokuapp.com/">Arcade game</a>
 	        </div>
 	        <div class="col-4">
-	          <img src="images/pacman.png" alt="My Image">
+	          <img src="images/pacman.png" width="100" height="100" alt="My Image">
 	          <p></p>
 	          <a href="https://github.com/aldizh/reinforcement_learning">Pacman Automation</a>
 	        </div>
 	      </div>
 			</div>
 			<div id="tabs-3">
+				<h4>Repositories and Blogs</h4>
 				<p>
 					 My work can be accessed via <a href="https://www.github.com/Aldizh">Github</a></br>
 					 Please feel free to connect with me on <a href="https://www.linkedin.com/in/aldi-zhupani">Linkedin</a></br>
 					 I also have a tech related blog profile on <a href="https://www.quora.com/profile/Aldi-Zhupani">Quora</a></br>
 			</div>
 			<div id="tabs-4">
-				<h5>Phone: 5105291247</h5>
-				<h5>Email: aldizhupani@gmail.com</h5>
+				<h4>Contact Info</h4>
+				<p>
+					Phone: 5105291247
+					Email: aldizhupani@gmail.com
+				</p>
 			</div>
 		</div>
 
