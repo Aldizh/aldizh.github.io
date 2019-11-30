@@ -44,9 +44,8 @@
   -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
      -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
           box-shadow: -8px 0 8px rgba(0,0,0,.5);
-  min-height: 100%;
   width: 200px;
-  background: #efa0a0;
+  background: #f8e6e6;
 }
 
 .main-menu a {
@@ -140,6 +139,7 @@
 		top: auto;
 		height: auto;
     display: block;
+    margin: auto;
   }
   
   .main-menu ul {
@@ -157,6 +157,7 @@
   
   .main-menu a {
     color: #06c;
+    padding: .75em .75em .75em 0!important;
     border: 0 !important; /* Remove borders from off-canvas styling */
   }
   
