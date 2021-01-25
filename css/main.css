@@ -6,10 +6,6 @@ body {
   background: #ffffff url("../images/background.jpg") no-repeat;
 }
 
-h1 {
-  font-size: 30px;
-}
-
 h1, h3 {
   color: #000080;
   margin-bottom: 10px;
@@ -32,6 +28,7 @@ h4 {
 }
 
 p {
+  line-height: 1.4;
   font-size: 20px;
   text-align: center;
   margin-left: 10px;
@@ -122,6 +119,7 @@ li {
 }
 
 .img-text-wrapper {
+  font-weight: 600;
   position: absolute;
   top: 0;
   display: flex;
@@ -130,8 +128,8 @@ li {
   align-items: center;
   height: 100%;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .img-text-wrapper .subtitle {
@@ -146,12 +144,16 @@ li {
 
 .img-text-wrapper:hover .subtitle {
   color: lightseagreen;
-  font-weight: 600;
 }
 
 .logo-wrapper img {
   width: 50%;
   margin-bottom: 20px;
+}
+
+.itemLink {
+  display: flex;
+  justify-content: center;
 }
 
 /* Default CSS */
