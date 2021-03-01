@@ -23,7 +23,8 @@
 				}
 		);
 		</script>
-		<script type = "text/javascript">
+		<!-- Ajax only works with premium get form submission -->
+		<!-- <script type = "text/javascript">
 			(function () {
 				alertify.set('notifier', 'position', 'top-left');
 				$(document).ready(function () {
@@ -65,14 +66,14 @@
 					});
 				});
 			}).call(this);
-		</script>
+		</script> -->
 		<!-- CSS -->	
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>	
 		<!-- Default theme -->	
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>	
 		<!-- Bootstrap theme -->	
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/header.css" rel="stylesheet">
@@ -200,19 +201,20 @@
 				<h4>Repositories and Blogs</h4>
 				<p>
 					My work can be accessed via <a href="https://www.github.com/Aldizh">Github</a></br>
-					Please feel free to connect with me on <a href="https://www.linkedin.com/in/aldi-zhupani">Linkedin</a></br>
+					Please feel free to connect with me on <a href="https://www.linkedin.com/in/aldi-zhupani-1690154a">Linkedin</a></br>
 					I will also sometimes write tech related articles on <a href="https://medium.com/@aldizhupani">Medium</a></br>
 				</p>
 			</div>
 			<div id="tabs-4">
 				<h4>Contact Form</h4>
 				<div class="col-12">
-					<form id="contact-form" action="https://getform.io/f/fd30a6b5-ddd3-4c86-8a6c-998bf0cb8c3a" method="POST" accept-charset="UTF-8">
+					<form  id="contact-form" action="https://getform.io/f/fd30a6b5-ddd3-4c86-8a6c-998bf0cb8c3a" method="POST" accept-charset="UTF-8">
 						<input class="form__input" id="inputName" type="text" placeholder="Your name" name="name"/>
 						<input class="form__input" id="inputEmail" type="email" placeholder="Your email" name="email"/>
 						<textarea class="form__input" id="inputMessage" rows="3" placeholder="Message" name="message"></textarea>
 						<input class="display-none" type="text" name="_gotcha"/>
-						<input class="btn--default fill" id="email-submit-btn" type="submit" value="Submit"/>
+						<button class="btn--default fill" id="email-submit-btn" type="submit">Submit</button>
+						<!-- <input class="btn--default fill" id="email-submit-btn" type="submit" value="Submit"/> -->
 					</form>
 				</div>
 			</div>
@@ -224,12 +226,10 @@
 
 	  portfolioItems.forEach(portfolioItem => {
 	    portfolioItem.addEventListener('mouseover', () => {
-	      console.log(portfolioItem.childNodes[1].classList)
 	      portfolioItem.childNodes[1].classList.add('image-blur');
 	    });
 
 	    portfolioItem.addEventListener('mouseout', () => {
-	      console.log(portfolioItem.childNodes[1].classList)
 	      portfolioItem.childNodes[1].classList.remove('image-blur');
 	    });
 	  });

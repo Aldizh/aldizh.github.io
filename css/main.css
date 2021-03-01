@@ -346,6 +346,10 @@ input, textarea {
 textarea {
 	resize: vertical;
 }
+form > button {
+	margin: 10px auto;
+	width: 15%;
+}
 
 .display-none {
 	display: none;
