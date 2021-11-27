@@ -23,50 +23,7 @@
 				}
 		);
 		</script>
-		<!-- Ajax only works with premium get form submission -->
-		<!-- <script type = "text/javascript">
-			(function () {
-				alertify.set('notifier', 'position', 'top-left');
-				$(document).ready(function () {
-					return $('#contact-form').submit(function (e) {
-						e.preventDefault();
-						var email, message, name;
-						var nameEl = document.getElementById('inputName');
-						var name = nameEl.value
-						var emailEl = document.getElementById('inputEmail');
-						var email = emailEl.value
-						var messageEl = document.getElementById('inputMessage');
-						message = messageEl.value
-						if (!name || !email || !message) {
-							alertify.error('Please check your entries');
-							return false;
-						} else {
-							var action = $(this).attr("action");
-							$.ajax({
-								type: "POST",
-								url: action,
-								crossDomain: true,
-								data: new FormData(this),
-								dataType: "json",
-								contentType: "multipart/form-data",
-								processData: false,
-								contentType: false,
-								headers: {
-									"Accept": "application/json"
-								}
-							}).done(function() {
-								nameEl.value = ''
-								emailEl.value = ''
-								messageEl.value = ''
-								alertify.success('Message received');
-							}).fail(function(e) {
-								alertify.error('Error', e.message);
-							});
-						}
-					});
-				});
-			}).call(this);
-		</script> -->
+		<script type = "text/javascript" src="https://embed.typeform.com/next/embed.js"></script>
 		<!-- CSS -->	
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>	
 		<!-- Default theme -->	
@@ -206,16 +163,18 @@
 				</p>
 			</div>
 			<div id="tabs-4">
-				<h4>Contact Form</h4>
+				<!-- <h4>Contact</h4> -->
 				<div class="col-12">
-					<form  id="contact-form" action="https://getform.io/f/fd30a6b5-ddd3-4c86-8a6c-998bf0cb8c3a" method="POST" accept-charset="UTF-8">
+					<div style="text-align: center;">
+						<button data-tf-popup="LB4OkQ2K" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Contact</button>
+					</div>
+					<!-- <form  id="contact-form" action="https://getform.io/f/fd30a6b5-ddd3-4c86-8a6c-998bf0cb8c3a" method="POST" accept-charset="UTF-8">
 						<input class="form__input" id="inputName" type="text" placeholder="Your name" name="name"/>
 						<input class="form__input" id="inputEmail" type="email" placeholder="Your email" name="email"/>
 						<textarea class="form__input" id="inputMessage" rows="3" placeholder="Message" name="message"></textarea>
 						<input class="display-none" type="text" name="_gotcha"/>
 						<button class="btn--default fill" id="email-submit-btn" type="submit">Submit</button>
-						<!-- <input class="btn--default fill" id="email-submit-btn" type="submit" value="Submit"/> -->
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>
