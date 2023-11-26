@@ -62,7 +62,8 @@
 						</a>
 						<ul>
 							<li><a href="#tabs-1">Introduction</a></li>
-							<li><a href="#tabs-2">Featured Projects</a></li>
+							<li><a href="#tabs-2">Skills</a></li>
+							<li><a href="#tabs-3">Featured Projects</a></li>
 							<li>
 								<a
 									href="https://aldizh.github.io/dashboard"
@@ -84,26 +85,40 @@
 		<div id="tabs">
 			<div id="tabs-1">
 				<div class="row"> <!-- Main Content -->
-					<div>
-						<h4>About me</h4>
-						<p>Aldi Zhupani (Software Engineer)</p>
-						<!-- Keep the picture in case we need to add it in the future>
-							<h3>
-								<img class="main-img" src="images/me.jpg" width="100" height="100" alt="My Image">
-							</h3>
-						-->
-						<p>Professional developer with a passion for web development and algorithms.<br/>Professional experience ranging from
-						database design to front end web apps and APIs. Currently developing on Node/ReactJS stack.<br/>
-						Recent large project was an international portal used by Copart employees in Germany, India and Spain.
-						It includes features such as receiving a car, title processing, service orders, auctioning and interfacing between
-						members and sellers. The backbone of the app was built on RoR (Ruby on Rails) with Angular JS integration for the front end.
+					<h2>Hello</h2>
+					<div class="col-12 hello">
+						<img width=150 height=150 src="./images/me_dogs.jpeg" />
+						<p>I am a senior software engineer with a passion for web development and algorithms. My pofessional experience ranges from
+						database UI design to APIs and back end development.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div id="tabs-2">
-				<div class="row portfolio-items-wrapper"> <!-- three images -->
-					<h4>Featured Projects</h4>
+				<div class="row skills">
+					<h2>Skills</h2>
+					<div class="col-12 skill">
+						<h3>Coding</h3>
+						<img width=200 src="./images/laptop.avif"></img>
+						<p>I have a passion for writing beautiful, simple to read code. My preferred language is Javascript but i am language agnostic when taking on a new project</p>
+						<hr />
+					</div>
+					<div class="col-12 skill">
+						<h3>Soccer</h3>
+						<img width=200 src="./images/soccer.avif"></img>
+						<p>I love to get my cleats dirty and never miss the premier league highlights. I enjoy playing midfield and center forword position.</p>
+						<hr />
+					</div>
+					<div class ="col-12 skill">
+						<h3>Cooking</h3>
+						<img width=200 height=150 src="./images/cooking.avif"></img>
+						<p>On weekends you will often find me chopping vegetables and experimenting with new recipies.</p>
+					</div>
+				</div>
+			</div>
+			<div id="tabs-3">
+				<div class="row portfolio-items"> <!-- three images -->
+					<h2>Featured Projects</h2>
 					<div class="col-3">
 						<div class="portfolio-item-wrapper">
 							<div class="portfolio-img-background" style="background-image:url(images/market.png)"></div>
@@ -151,16 +166,16 @@
 					</div>
 				</div>
 			</div>
-			<div id="tabs-3">
-				<h4>Repositories and Blogs</h4>
-				<p>
-					My work can be accessed via <a href="https://www.github.com/Aldizh">Github</a></br>
-					Please feel free to connect with me on <a href="https://www.linkedin.com/in/aldi-zhupani-1690154a">Linkedin</a></br>
-					I will also sometimes write tech related articles on <a href="https://medium.com/@aldizhupani">Medium</a></br>
-				</p>
-			</div>
 			<div id="tabs-4">
-				<!-- <h4>Contact</h4> -->
+				<div class="rows repo">
+					<h2>Quick Links</h2>
+					<p><a href="https://www.github.com/Aldizh">Github</a> to access my work.</p>
+					<p><a href="https://www.linkedin.com/in/aldi-zhupani-1690154a">LinkedIn</a> to connect with me.</p>
+					<p><a href="https://medium.com/@aldizhupani">Medium</a> to follow my latest articles.</p>
+				</div>
+			</div>
+			<div id="tabs-5">
+				<!-- <h2>Contact</h2> -->
 				<div class="col-12">
 					<div data-tf-sidetab="LB4OkQ2K" data-tf-width="320" data-tf-height="400" data-tf-button-color="#0445AF" data-tf-button-text="Contact" style="all:unset;"></div>					<!-- <form  id="contact-form" action="https://getform.io/f/fd30a6b5-ddd3-4c86-8a6c-998bf0cb8c3a" method="POST" accept-charset="UTF-8">
 						<input class="form__input" id="inputName" type="text" placeholder="Your name" name="name"/>

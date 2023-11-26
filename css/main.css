@@ -1,9 +1,9 @@
 /* CSS written by Aldi */
-
 body {
-  margin: 0 auto;
   width: 85% !important;
-  background: #ffffff url("../images/background.jpg") no-repeat;
+  background-image:
+    linear-gradient(45deg, #e3d39e 20%, #97D9E1 80%),
+    url("../images/background.jpg")
 }
 
 h1, h3 {
@@ -19,19 +19,18 @@ h1, h3, p, a, input, textarea {
   flex-wrap: wrap;
 }
 
-h4 {
+h2 {
   text-align: center;
   width: 100%;
   font-size: 30px;
-  margin: 20px 10px;
-  color: #8a3535;
+  padding: 2px;
+  color: #ca875f;
 }
 
 p {
   line-height: 1.4;
   font-size: 20px;
   text-align: center;
-  margin-left: 10px;
 }
 
 img {
@@ -100,7 +99,8 @@ li {
   width: 33.33%;
 }
 
-.portfolio-items-wrapper {
+.portfolio-items {
+  margin: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -154,6 +154,20 @@ li {
 .itemLink {
   display: flex;
   justify-content: center;
+}
+
+.skill {
+  text-align: center;
+}
+
+.hello > p,
+.skill > p {
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.hello {
+  text-align: center;
 }
 
 /* Default CSS */
@@ -232,7 +246,6 @@ li {
 
 @media only screen and (min-width: 425px) {
   h1, h3 {
-    text-align: left;
     overflow: auto;
   }
 }
